@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Test Generation Bot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <h1>AI Test Generation Bot</h1>
+
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" name="pdfFile" accept=".pdf" required>
+        <button type="button" onclick="processPDF()">Process PDF</button>
+    </form>
+
+    <div id="processingMessage"></div>
+
+    <form id="generateTestForm">
+        <!-- Specify topics, chapters, subjects, class levels -->
+        <button type="button" onclick="generateTest()">Generate Test</button>
+    </form>
+
+    <div id="generatedTest"></div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

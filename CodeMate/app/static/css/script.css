@@ -1,0 +1,37 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#processingMessage {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#generatedTest {
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
